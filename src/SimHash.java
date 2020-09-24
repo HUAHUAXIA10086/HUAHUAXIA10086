@@ -4,26 +4,6 @@ import java.security.MessageDigest;
 
 public class SimHash {
 //定义待比较的字符串
-
-//    static String s1 = "SimHash/皇大厦/的/研究";
-//
-//    static String s2 = "SimHash/皇大厦/的/研究";
-//
-//    static String s3 = "SimHash/研究/的/算法";
-//
-//    static String s4 = "SimHash/是/一种/文本/相似性/算法";
-//    //定义待比较的字符串
-//
-//    static String s5 = "电视剧/小时代/由/郭敬明/的/同名/小说/改编/而/成/故事/以/经济/飞速/发展/的/上海/这/座/风光/而/时尚/的/城市/为/背景/讲述/了/林萧/南湘/顾里/唐宛如/这/四/个/从小/感情/深厚/有着/不同/价值观/和/人生观/的/女生/先后/所/经历/的/友情/爱情/乃至/亲情/的/巨大/转变/是/一/部/当下/年轻人/生活/一个/侧面/的/真实/写照";
-//
-//    static String s6 = "电视剧/大时代/由/郭敬明/的/同名/小说/改编/而/成/该剧情/以/经济/飞速/发展/的/大上海/这/座/风光/而/时尚/的/城市/为/背景/讲述/了/林萧/南湘/顾里/唐宛如/这/四/个/从小/感情/深厚/有着/不同/价值观/和/人生观/的/女生/先后/所/经历/的/友情/爱情/乃至/亲情/的/巨大/转变/是/一/部/当下/年轻人/生活/一个/侧面/的/真实/写照";
-//    //定义待比较的字符串
-//
-//    static String s7 = "你/妈妈/喊/你/回家/吃饭/哦/回家/喽/回家/喽";
-//
-//    static String s8 = "你/妈妈/叫/你/回家/吃饭/哦/回家/喽/回家/喽";
-
-
     static String MD5_Hash(String str) {
         try {
             // 生成一个MD5加密计算摘要
@@ -151,36 +131,6 @@ public class SimHash {
     }
 
     public static void main(String[] args) throws IOException {
-//        String a1 = First_FC(s1);
-//        String a2 = First_FC(s2);
-//        String a3 = First_FC(s3);
-//        String a4 = First_FC(s4);
-//        System.out.println("【s1】的SimHash值为：" + a1);
-//        System.out.println("【s2】的SimHash值为：" + a2);
-//        System.out.println("【s3】的SimHash值为：" + a3);
-//        System.out.println("【s4】的SimHash值为：" + a4);
-//        System.out.println("【s1】和【s2】的海明距离为：" + HMJL(a1, a2) + "，相似度为：" + (100 - HMJL(a1, a2) * 100 / 128) + "%");
-//        System.out.println("【s1】和【s3】的海明距离为：" + HMJL(a1, a3) + "，相似度为：" + (100 - HMJL(a1, a3) * 100 / 128) + "%");
-//        System.out.println("【s1】和【s4】的海明距离为：" + HMJL(a1, a4) + "，相似度为：" + (100 - HMJL(a1, a4) * 100 / 128) + "%");
-//        System.out.println("【s2】和【s3】的海明距离为：" + HMJL(a2, a3) + "，相似度为：" + (100 - HMJL(a2, a3) * 100 / 128) + "%");
-//        System.out.println("【s2】和【s4】的海明距离为：" + HMJL(a2, a4) + "，相似度为：" + (100 - HMJL(a2, a4) * 100 / 128) + "%");
-//        System.out.println("【s3】和【s4】的海明距离为：" + HMJL(a3, a4) + "，相似度为：" + (100 - HMJL(a3, a4) * 100 / 128) + "%");
-//
-//        String a5 = First_FC(s5);
-//        String a6 = First_FC(s6);
-//        String a7 = First_FC(s7);
-//        String a8 = First_FC(s8);
-//        System.out.println("【s5】的SimHash值为：" + a5);
-//        System.out.println("【s6】的SimHash值为：" + a6);
-//        System.out.println("【s7】的SimHash值为：" + a7);
-//        System.out.println("【s8】的SimHash值为：" + a8);
-//        System.out.println("【s5】和【s6】的海明距离为：" + HMJL(a5, a6) + "，相似度为：" + (100 - HMJL(a5, a6) * 100 / 128) + "%");
-//        System.out.println("【s5】和【s7】的海明距离为：" + HMJL(a5, a7) + "，相似度为：" + (100 - HMJL(a5, a7) * 100 / 128) + "%");
-//        System.out.println("【s5】和【s8】的海明距离为：" + HMJL(a5, a8) + "，相似度为：" + (100 - HMJL(a5, a8) * 100 / 128) + "%");
-//        System.out.println("【s6】和【s7】的海明距离为：" + HMJL(a6, a7) + "，相似度为：" + (100 - HMJL(a6, a7) * 100 / 128) + "%");
-//        System.out.println("【s6】和【s8】的海明距离为：" + HMJL(a6, a8) + "，相似度为：" + (100 - HMJL(a6, a8) * 100 / 128) + "%");
-//        System.out.println("【s7】和【s8】的海明距离为：" + HMJL(a7, a8) + "，相似度为：" + (100 - HMJL(a7, a8) * 100 / 128) + "%");
-
 //        获取文件
         File originalFile = new File("D:\\2020大三上学期\\软工\\个人项目\\测试文件\\test\\orig.txt");
         File origAdd = new File("D:\\2020大三上学期\\软工\\个人项目\\测试文件\\test\\orig_0.8_add.txt");
